@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=VT323&display=swap');
+
+:root {
+  --color-primary: #ff9441;
+  --color-secondary: #de5239;
+  --color-accent-1: #ffd57b;
+  --color-accent-2: #e6ac5a;
+  --color-dark-1: #8b2900;
+  --color-dark-2: #1c1412;
+  --color-dark-3: #8b2800;
+  --color-dark-4: #140e0c;
+  --color-accent-btn: #ee733d;
+  --font-family-lato: 'Lato', sans-serif;
+  --font-family-vt323: 'VT323', monospace;
+}
+
+body {
+  background-color: var(--color-dark-2);
+  color: var(--color-accent-1);
+  font-family: var(--font-family-lato);
+  font-weight: 400;
+  font-style: normal;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, main (1fr para llenar espacio), footer */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-primary);
+  font-family: var(--font-family-vt323);
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+main {
+  margin: 6rem 0;
+}
+
+a.nav-link {
+  color: var(--color-accent-1);
+}
+
+a.nav-link:hover {
+  color: var(--color-primary);
+}
+
+.navbar-dark {
+  background-color: var(--color-dark-1);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-dark-4);
+  border: 2px solid var(--color-secondary);
+  color: var(--color-accent-1);
+  height: 100%;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h5 {
+  color: var(--color-primary);
+}
+
+.card .btn {
+  background-color: var(--color-accent-btn);
+  color: var(--color-dark-2);
+  border: none;
+}
+
+.card .btn:hover {
+  background-color: var(--color-secondary);
+}
+
+.card-img-top {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.btn-danger {
+  background-color: var(--color-secondary);
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: var(--color-dark-1);
+}
+
+#region-select {
+  background-color: var(--color-dark-2);
+  color: var(--color-accent-1);
+  border: 2px solid var(--color-secondary);
+}
+
+#region-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px rgba(255, 148, 65, 0.8);
+}
