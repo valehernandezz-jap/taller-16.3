@@ -7,7 +7,7 @@ header.innerHTML = `
     <div class="container">
       <a
         class="navbar-brand d-flex align-items-center justify-content-center p-0 m-0"
-        href="/"
+        href="/taller-16.3/"
         style="font-family: var(--font-family-vt323); font-size: 2rem"
       >
         <img
